@@ -61,15 +61,12 @@ img {
 
 }
 .footer {
-  position: absolute;
-  height:6%;
-  width:100%;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-  background-color: #efefef;
+  height: 130px;
+  width: 100%;
+  margin: 0 auto;
+  display:   flex;
   text-align: center;
+  position: absolute;
 
 }
 * {
@@ -91,7 +88,29 @@ img {
 .wrapper, html, body{
     height: 0%;
 }
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
 
+.Site-content {
+  flex: 1;
+}
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin: 0 0 100px; /* bottom = footer height */
+}
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+}
 
 </style>
 
@@ -169,14 +188,13 @@ img {
 
 
 
+  <footer>
+              <a href="https://twitter.com/search?q=holberton&src=typd" target="_blank"> <img src="http://iconizer.net/files/simple_social_bookmarking/orig/twitter_bird.png" alt="Twitter" height="50" width"50" style=" margin: 0 0 10px 10px;"></img> </a>
+              <a href="https://www.instagram.com/holbertonschool/?hl=en" target="_blank"> <img src="https://www.noelleeming.co.nz/shop/content/dcassets/NL/shop-instagram/Instagram.png" alt="Instagram" height="50" width"50"style=" margin: 0 0 10px 10px;"></img> </a>
+                <a href="https://www.facebook.com/HolbertonSchool/" target="_blank"> <img src="http://downloadicons.net/sites/default/files/facebook-logo-icon-72283.png" alt="Facebook" height="50" width"50" style=" margin: 0 0 10px 10px"></img> </a>
+  </footer>
 
 
 
-
-     <div class="footer">
-               <a href="https://twitter.com/search?q=holberton&src=typd" target="_blank"> <img src="http://iconizer.net/files/simple_social_bookmarking/orig/twitter_bird.png" alt="Twitter" height="50" width"50"/> </a>
-               <a href="https://www.instagram.com/holbertonschool/?hl=en" target="_blank"> <img src="https://www.noelleeming.co.nz/shop/content/dcassets/NL/shop-instagram/Instagram.png" alt="Instagram" height="50" width"50"/> </a>
-                 <a href="https://www.facebook.com/HolbertonSchool/" target="_blank"> <img src="http://downloadicons.net/sites/default/files/facebook-logo-icon-72283.png" alt="Facebook" height="50" width"50"/> </a>
-   </div>
 </body>
 </html>
